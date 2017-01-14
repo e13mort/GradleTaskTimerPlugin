@@ -1,0 +1,22 @@
+apply plugin: 'java'
+apply plugin: 'maven-publish'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    compile gradleApi()
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            groupId = GROUP
+            artifactId = ARTIFACT_ID
+            version = VERSION_NAME
+            from components.java
+        }
+    }
+}
