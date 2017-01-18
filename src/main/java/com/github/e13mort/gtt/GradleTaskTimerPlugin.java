@@ -16,7 +16,7 @@ public class GradleTaskTimerPlugin implements Plugin<Project> {
 
     static final String OUT_INTRO = "Task timings (took longer than %s ms):\n";
     static final String OUT_TIMING_TEMPLATE = "%7sms  %s\n";
-    private static final String SETTINGS = "taskTimingSettings";
+    private static final String SETTINGS = "taskTimerSettings";
 
     @Override
     public void apply(Project project) {
