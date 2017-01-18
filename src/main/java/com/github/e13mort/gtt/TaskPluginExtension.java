@@ -4,14 +4,14 @@ public class TaskPluginExtension {
 
     static final long DEFAULT_THRESHOLD = 50L;
 
-    private long threshold = DEFAULT_THRESHOLD;
+    private long thresholdMs = DEFAULT_THRESHOLD;
 
     @SuppressWarnings("unused")
-    public void setThreshold(long threshold) {
-        this.threshold = threshold;
+    public void setThresholdMs(long thresholdMs) {
+        this.thresholdMs = thresholdMs;
     }
 
-    long getThreshold() {
-        return threshold;
+    long getThresholdMs() {
+        return thresholdMs;
     }
 }

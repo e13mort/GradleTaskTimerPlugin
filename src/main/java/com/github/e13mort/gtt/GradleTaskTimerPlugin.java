@@ -58,7 +58,7 @@ public class GradleTaskTimerPlugin implements Plugin<Project> {
         private long getThreshold() {
             TaskPluginExtension extension = project.getExtensions().findByType(TaskPluginExtension.class);
             //noinspection ConstantConditions
-            return extension != null ? extension.getThreshold() : TaskPluginExtension.DEFAULT_THRESHOLD;
+            return extension != null ? extension.getThresholdMs() : TaskPluginExtension.DEFAULT_THRESHOLD;
         }
 
         private static class TaskTimingInfo {
